@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0px;
+    font-family: 'Poppins Medium', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    /* 1 vh= 19.2px */
+    background-color: white;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    /* to view the elements one after other to left */
+    justify-content: space-between;
+    /* it makes the content at both sides and mainly it creates a space between */
+    margin-left: 100px;
+    align-items: center;
+    width: 85%;
+}
+
+.logo {
+    width: 130px;
+}
+
+.linkitems {
+    display: inline-block;
+    /* to represent vertical to horizontal */
+    margin: 10px 20px;
+}
+
+.link {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+/* pseudo class */
+/* syntax */
+/* selector:pseudo class{property:value;} */
+
+.link:hover {
+    color: red;
+}
+
+.title {
+    margin-top: 13%;
+    margin-left: 8%;
+}
+
+.title_h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#lastname {
+    color: #FFA500;
+}
+
+.download {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.images {
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    bottom: 0px;
+    right: 30px;
+}
+
+.images img {
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 2s;
+}
+
+.images:hover #shape {
+    bottom: 70px;
+}
+
+.images:hover #girl {
+    left: 40%;
+}
+
+#about {
+    margin: 22% 8% 0% 8%;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading h2 {
+    font-size: 30px;
+}
+
+.heading span {
+    font-size: 20px;
+    color: green;
+}
+
+.about_content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 1fr=250px */
+    gap: 2rem;
+    /* 1rem =16px */
+}
+
+.about_img img {
+    width: 80%;
+    border-radius: 1rem;
+}
+
+.about_details {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+    /* to properly align both sides */
+    margin-top: 20px;
+}
+
+.informations {
+    margin-top: 2rem;
+}
+
+.info_box {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.info_box span {
+    margin-left: 1rem;
+}
+
+#skills {
+    margin: 8% 8% 0 8%;
+}
+
+.skill-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 1fr=250px */
+    gap: 2rem;
+    /* 1rem =16px */
+}
+
+.skill-img img {
+    width: 85%;
+    padding-left: 4rem;
+}
+
+.bar-controller {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.base-bar {
+    width: 100%;
+    height: 0.5rem;
+    background-color: rgb(12, 2, 21);
+    border-radius: 5rem;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.html-bar {
+    width: 96%;
+    background-color: #FFA500;
+}
+
+.react-bar {
+    width: 85%;
+    background-color: #FFA500;
+}
+
+.js-bar {
+    width: 89%;
+    background-color: #FFA500;
+}
+
+.css-bar {
+    width: 88%;
+    background-color: #FFA500;
+}
+
+.nav {
+    font-size: xx-large;
+    text-align: center;
+}
+
+.er {
+    display: inline-block;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-top: 50px;
+    border-radius: 80%;
+    font-size: 2rem;
+}
+
+.hedding2 {
+    text-align: center;
+}
+
+.para {
+    font-size: large;
+}
+
+.er:hover {
+    background-image: linear-gradient(to right, red, yellow);
+    font-size: 2.5rem;
+}
+
+.er i:hover {
+    color: aliceblue;
+    animation: shake 1s;
+}
+
+/*animation function*/
+@keyframes shake {
+    10% {
+        transform: rotate(-15eg);
+    }
+
+    20% {
+        transform: rotate(15eg);
+    }
+
+    30% {
+        transform: rotate(15eg);
+    }
+
+    40% {
+        transform: rotate(-15eg);
+    }
+}
+
+.footer {
+    margin: 3rem 0px;
+    margin: 20px;
+}
+
+.up-arrow {
+    float: right;
+    background-image: linear-gradient(to right, red, yellow);
+font-size: 3rem;
+}
+
+.up-arrow:hover i {
+    color: white;
+}
